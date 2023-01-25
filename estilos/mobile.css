@@ -14,12 +14,27 @@
     --cor2: #7FA1E0;
     --cor3: #3A4694;
     --cor4: #101847;
+    --cor5: #4970b7;
+    --cor6: #acc8fb;
 }
 
 body, html {
-    background-image: linear-gradient(to top, var(--cor4), var(--cor3));
+    background-color: var(--cor3);
     width: 100vw;
     height: 100vh;
+}
+
+.titulo {
+    padding-top: 10px;
+    text-align: center;
+    color: var(--cor1);
+    text-shadow: 2px 2px 3px var(--cor4);
+}
+
+.subtitulo {
+    color: var(--cor1);
+    text-shadow: 1px 1px 2px var(--cor4);
+    text-align: center;
 }
 
 main {
@@ -31,8 +46,9 @@ main {
 #login {
     background-color: var(--cor1);
     width: 300px;
-    height: 550px;
+    height: 560px;
     border-radius: 30px;
+    margin-top: 10px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -66,3 +82,71 @@ main {
     font-size: 0.8em;
     margin-bottom: 20px;
 }
+
+.campo {
+    display: block;
+}
+
+.campo label {
+    display: none;
+}
+
+.campo span {
+    color: var(--cor3);
+    width: 40px ;
+    padding: 5px;
+}
+
+.campo input {
+    width: calc(100% - 80px);
+    background-color: var(--cor6);
+    border: none;
+    padding: 3px;
+    border-radius: 3px;
+    transform: translateY(-7px);
+}
+
+.campo input:focus-within {
+    background-color: var(--cor1);
+}
+
+input[type=submit] {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    width: 50%;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: 0.8em;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    border: 1px solid var(--cor4);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--cor4);
+}
+
+.alterar {
+    display: block;
+    margin: auto;
+    width: 50%;
+    padding: 7px;
+    background-color: var(--cor1);
+    color: var(--cor5);
+    font-size: 0.8em;
+    text-decoration: none;
+    border: 1px solid var(--cor2);
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.alterar:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+

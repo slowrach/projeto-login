@@ -5,9 +5,18 @@
         background-image: linear-gradient(to top, var(--cor4), var(--cor2));
     }
     
+    .titulo {
+        padding-top: 45px;
+        font-size: 3em;
+    }
+
+    .subtitulo {
+        font-size: 1.5em;
+    }
+
     #login {
         width: 80vw;
-        height: 450px;
+        height: 350px;
     }
 
     #imagem {
@@ -21,7 +30,16 @@
         width: 60%;
     }
 
-    #form > p {
+    #form h1 {
+        padding-top: 20px;
+        font-size: 1.8em;
+    }
+
+    #form p {
+        font-size: 1.2em;
+    }
+
+    input[type=submit] {
         font-size: 1em;
     }
 }
@@ -31,27 +49,41 @@
         background-image: linear-gradient(to top, var(--cor4), var(--cor2));
     }
 
+    .titulo {
+        padding-top: 30px;
+        font-size: 3em;
+    }
+
+    .subtitulo {
+        font-size: 1.5em;
+    }
+
     #login {
         width: 980px;
-        height: 550px;
+        height: 400px;
     }
 
     #imagem {
         float: right;
-        width: 50%;
+        width: 40%;
         height: 100%;
     }
 
     #form {
         float: left;
-        width: 50%;
+        width: 60%;
     }
 
-    #form > h1 {
+    #form h1 {
+        padding-top: 40px;
         font-size: 2em;
     }
 
-    #form > p {
-        font-size: 1.2em;
+    #form p {
+        font-size: 1.3em;
+    }
+
+    input[type=submit] {
+        font-size: 1em;
     }
 }
